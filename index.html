@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video to ASCII</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #ascii-video {
+            font-family: monospace;
+            white-space: pre;
+            line-height: 1em;
+        }
+        video {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="file" id="upload" accept="video/*">
+    <video id="video" controls></video>
+    <pre id="ascii-video"></pre>
+
+    <script src="asciiVideo.js"></script>
+</body>
+</html>
